@@ -28,9 +28,9 @@ kddcup_array = kddcup_array.T
 
 # Clustering.
 pred = KMeans(n_clusters=CLUSTER_NUM).fit_predict(kddcup_array)
-df_kddcup['cluster_id'] = pred
+df_kddcup['cluster_number'] = pred
 print(df_kddcup)
-print(df_kddcup['cluster_id'].value_counts())
+print(df_kddcup['cluster_number'].value_counts())
 
 # Visualization using matplotlib.
 cluster_info = pd.DataFrame()
