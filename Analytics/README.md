@@ -2,7 +2,7 @@
 
  ![result](./img/clustering.png)
 
-## Requirement libraries
+## Required libraries
 * pandas
 * numpy
 * scikit-learn
