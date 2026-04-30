@@ -36,7 +36,7 @@ if not os.path.exists(result_dir):
 
 if __name__ == '__main__':
     # VGG16モデルと学習済み重み(ImageNet)をロード
-    input_tensor = Input(shape=(img_rows, img_cols, 3))
+    input_tensor = Input(shape=(img_rows, img_cols, channels))
     vgg16 = VGG16(include_top=False, weights='imagenet', input_tensor=input_tensor)
 
     # FC
